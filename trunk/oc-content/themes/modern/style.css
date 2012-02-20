@@ -14,7 +14,7 @@ input:focus { outline:none; }
 .error h1 { font-size: 2.5em; text-align: center; }
 
 /* -- GLOBAL STYLES --------------------------------------- */
-body { line-height:1; color:#333; font: 12px Arial, Helvetica, Verdana, sans-serif; }
+body { line-height:1; color:#333; font: 12px Arial, Helvetica, Verdana, sans-serif; background-image: url(images/FondoGris.png); background-repeat: repeat-x; background-position: left top; background-color: #cacccf;}
 a { color:#069; text-decoration:underline; }
 a:hover { color:#F80; }
 option.pad { margin-left:10px;}
@@ -89,8 +89,8 @@ option.pad { margin-left:10px;}
 .home #main .categories.c1 .category li { float:left; margin-right:17px; width:330px; }
 .home #main .categories .category { margin-bottom:15px; }
 .home #main .categories .category h1 { margin-bottom:5px; }
-.home #main .categories .category h1 span { color:#CCC; }
-.home #main .categories .category li { border-bottom:1px dotted #DDD; color:#CCC; font-size:11px; padding:5px 0; }
+.home #main .categories .category h1 span { color:#069; }
+.home #main .categories .category li { border-bottom:1px dotted #DDD; color:#069; font-size:11px; padding:5px 0; }
 .home #main .latest_ads { padding-left:10px; clear:both; }
 .home #main .latest_ads table { clear:both; width:100%; }
 .home #main .latest_ads table td { border-bottom:1px dotted #dddddd; padding:8px; vertical-align:top; } 
