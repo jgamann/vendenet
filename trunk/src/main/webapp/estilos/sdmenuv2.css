@@ -1,0 +1,90 @@
+div.sdmenu {
+	width: 220px;
+	height:37px;
+	padding-bottom: 15px;
+}
+div.sdmenu div.titulo_scroll {
+	margin-top: 8px;
+	/*background: url(../imagenes/fondo_menu.jpg) no-repeat;*/
+}
+div.sdmenu div {
+	overflow: hidden;
+}
+div.sdmenu div.scroll{
+	background: none;
+	max-height: 400px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	padding-bottom: 2px;
+}
+div.sdmenu div.collapsed {
+	height: 37px;
+}
+div.sdmenu div span {
+	border:#222 solid 1px;
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	font-size: 0.8em;
+	overflow: auto;
+	position:relative; background:#222; margin-right: 10px; margin-bottom: 10px;
+	-o-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	-icab-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	-khtml-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	
+	-o-border-radius: 10px;
+	-icab-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+div.sdmenu div span:hover {
+	border:red solid 1px;
+}
+div.sdmenu div.collapsed span {
+}
+div.sdmenu div a {
+	padding: 8px;
+	border:#bfd1eb solid 1px;
+	display: block;
+	margin:0.3em 0em 0em 0em;
+	text-decoration: none;
+	color:#444;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+div.sdmenu div a.current {
+	
+}
+div.sdmenu div a:hover {
+	color:#CC0000;
+	text-decoration: none;
+}
+
+.link_cincuenta{
+	float: left;
+	width: 38%;
+	padding: 8px;
+	border:#bfd1eb solid 1px;
+	display: block;
+	margin:0.3em 0.3em 0.3em 0.3em;
+	text-decoration: none;
+	color:#666666;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.flechita{
+ border: none;
+ margin-left: 1em;
+ vertical-align: middle;
+}
+div.sobrespan {
+	padding: 10px;
+}

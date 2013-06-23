@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.vendenet.negocio.entidad.VisitaIntranet" table="visitaintranet">
+		<id name="id" column="VISITAINTRANET_ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="VISITAINTRANET_NAME"/>
+		<property name="fechaVisita" column="FECHA_VISITA"/>
+		<property name="loginOk" type="boolean" column="LOGINOK"/>
+		<property name="navegador" column="NAVEGADOR"/>
+		<property name="ip" column="IP"/>
+	</class>
+</hibernate-mapping>

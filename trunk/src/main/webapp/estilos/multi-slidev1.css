@@ -1,0 +1,32 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+Copyright (c) 2009 Stu Nicholls - stunicholls.com - all rights reserved.
+=================================================================== */
+
+#slideshow {width:580px; height:400px; margin:0 auto; border: #222 solid 1.5px; position:absolute; left: 420px; background:#222; float: left; margin-right: 10px; margin-bottom: 10px;
+-o-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+-icab-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+-khtml-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+-moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+-webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+
+-o-border-radius: 10px;
+-icab-border-radius: 10px;
+-khtml-border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+#thumbs {width:490px; height:52px; overflow:hidden; position:absolute; left:49px; top:345px; z-index:10;}
+#thumbHolder {position:relative; top:0; left:0; width:490px;}
+#thumbs img {display:block; float:left; margin-right:8px; margin-bottom:0px; margin-top: auto; display:inline; padding:1px; background:#aaa; cursor:pointer;}
+#images {width:480px; height:322px; position:absolute; left:50px; top:10px; overflow:hidden; z-index:10; background:#222 url(../imagenes/loading_fondo.gif) no-repeat center;}
+#images img {position:absolute; margin-left: auto; left:480px; top:0; border:1px solid #888;}
+#slideshow:hover{
+	border: red solid 1.5px;
+}
+#images img:HOVER {
+	cursor: url(../imagenes/zoom_image.png), default;	
+}
+#hueco_slideshow{width:580px; height:400px;}

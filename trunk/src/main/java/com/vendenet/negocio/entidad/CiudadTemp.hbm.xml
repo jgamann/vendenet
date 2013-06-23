@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.vendenet.negocio.entidad.CiudadTemp" table="ciudadtemp" lazy="false">
+		<id name="id" column="CIUDADTEMP_ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="CIUDADTEMP_NAME"/>		
+		<property name="comunidad" column="COMUNIDAD"/>
+	</class>
+</hibernate-mapping>
