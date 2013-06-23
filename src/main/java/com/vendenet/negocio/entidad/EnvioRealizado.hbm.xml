@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.vendenet.negocio.entidad.EnvioRealizado" table="enviorealizado" lazy="false">
+		<id name="id" column="ENVIOREALIZADO_ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="ENVIOREALIZADO_NAME"/>
+		<property name="emailFrom" column="EMAIL_FROM"/>
+		<property name="emailTo" column="EMAIL_TO"/>
+		<property name="emailSubject" column="EMAIL_SUBJECT"/>
+		<property name="emailBody" column="EMAIL_BODY"/>
+		<property name="fechaAlta" column="FECHA_ALTA"/>
+		<property name="envioOk" type="boolean" column="ENVIO_OK"/>
+	</class>
+</hibernate-mapping>

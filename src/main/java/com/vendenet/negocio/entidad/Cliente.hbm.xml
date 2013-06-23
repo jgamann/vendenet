@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.vendenet.negocio.entidad.Cliente" table="cliente" lazy="false">
+		<id name="id" column="CLIENTE_ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="CLIENTE_NAME"/>
+		<property name="email" column="EMAIL"/>
+		<property name="pass" column="PASS"/>
+		<property name="telefono" column="TELEFONO"/>
+		<property name="fechaAlta" column="FECHA_ALTA"/>
+		<bag name="anuncios" table="ANUNCIO">
+    		<key column="CLIENTE_ID"/>
+    		<one-to-many class="com.vendenet.negocio.entidad.Anuncio"/>
+ 		</bag>
+	</class>
+</hibernate-mapping>

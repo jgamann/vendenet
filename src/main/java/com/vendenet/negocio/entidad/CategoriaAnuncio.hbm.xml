@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.vendenet.negocio.entidad.CategoriaAnuncio" table="categoriaanuncio" lazy="false">
+		<id name="id" column="CATEGORIA_ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="CATEGORIA_NAME"/>
+		<many-to-one name="categoriapadre" column="CATEGORIAPADRE_ID" class="com.vendenet.negocio.entidad.CategoriaAnuncio" lazy="false"/>
+		<property name="orden" column="ORDEN"/>
+	</class>
+</hibernate-mapping>

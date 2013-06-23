@@ -1,0 +1,72 @@
+
+--------------------------------------------------------------------------------------Testar mejor le telefono del anuncio
+--------------------------------------------------------------------------------------Lupa pulsada
+--------------------------------------------------------------------------------------Mostrar no hay resultados
+--------------------------------------------------------------------------------------Agrupar la imagenes subidas en carpetas por dia, mes o semana o algo
+--------------------------------------------------------------------------------------Controlar que meta un parametro extraño al ver anuncio, mostrar anuncio no existente
+--------------------------------------------------------------------------------------Intranet Boton denegar
+--------------------------------------------------------------------------------------Intranet Boton despublicar
+--------------------------------------------------------------------------------------Numero de anuncios por aprobar
+--------------------------------------------------------------------------------------Multiseleccion en intranet
+--------------------------------------------------------------------------------------Cuando pulsa en el logo reiniar la query con algun parametro especial
+--------------------------------------------------------------------------------------Logo
+--------------------------------------------------------------------------------------Si es explorer quitar el fadein¿? SI!!!
+--------------------------------------------------------------------------------------Cuando da de alta un anuncio no se registra automaticamente.
+--------------------------------------------------------------------------------------IMPORTANTE problemas con CharSet ñ, acentos, caracteres chungos
+--------------------------------------------------------------------------------------Avisar al lado del boton de siguiente que revise los campos en rojo
+--------------------------------------------------------------------------------------Timer
+--------------------------------------------------------------------------------------Proceso que borra imagenes sin anuncio
+--------------------------------------------------------------------------------------Numero de anuncios en resultados
+--------------------------------------------------------------------------------------Logger Debug
+--------------------------------------------------------------------------------------SISTEMAS (apache + mod_jk + tomcat + mysql + phpmyadmin)
+--------------------------------------------------------------------------------------Anuncios devueltos, ¿cuando caducan y borro todo? En el proceso de purgado, borrar aquellos anuncios que estan devueltos y ha pasado 7 dias.
+--------------------------------------------------------------------------------------Intranet para gestionar anuncios sin aceptar (cuando aceptamos un anuncio se envia un mail al usuario con link para borrarlo inmediatamente)
+--------------------------------------------------------------------------------------Intranet Boton devolver (falta enviar email)
+--------------------------------------------------------------------------------------Intranet Boton Aceptar (falta enviar email)
+--------------------------------------------------------------------------------------Formulario para contactar con el usuario (enviar email)
+--------------------------------------------------------------------------------------Proceso que borra anuncios caducados
+--------------------------------------------------------------------------------------Lista de palabras para no poner un anuncio (se devuelve al cliente con mensaje palabras malsonantes o prohibidas)
+--------------------------------------------------------------------------------------Limpiar ipvisitante cuyo id_anuncio = null
+--------------------------------------------------------------------------------------Link a poner anuncio
+--------------------------------------------------------------------------------------Que pasa si mete caracteres raros? & % $ .... NADA! soy el puto amo!!!!
+--------------------------------------------------------------------------------------Marca de agua con logo vendenet en fotografias subidas
+--------------------------------------------------------------------------------------Revisar transacciones, cuando se abre una se debe cerrar despues, he configurado el pool C3PO a ver que tal se comporta.
+
+-Contador visitas absoluto
+-Textos legales(mucha chapa...)
+-Llenar tabla palabrotas (Borja, lo hara a medida que vaya encontrando tacos repetidos)
+-Lista de cuentas de correo spam evitar que pongan anuncios.¿? Demasiado volatil, ips dinamicas, puede que un usuario bueno tenga una ip rechazada y no pueda poner anuncio.
+-Lista de IP que suben muchos archivos o que ponen anuncios invalidos. A FUTURO, de momento vale con proceso de purga.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-Cuando modifico foto de un anuncio la foto vieja no se borra automaticamente? y si son archivos que no son fotos?
+PRUEBAS
+                                                1. Crear anuncio y borrarlo. OK
+                                                2. Crear anuncio, aceptarlo y borrarlo.OK
+                                                    Se mantienen las visitas pero se limpian en el proceso de purga.
+                                                3. Crear anuncio, aceptarlo y borrarlo desde email.OK
+                                                    Borra el cliente pero no los anuncios que cuelgan. Borrar los anuncios que cuelgan y los adjuntos lo hara el proceso de purgado.
+                                                4.Crear anuncio, aceptarlo y borrarlo desde el cliente.OK
+                                                5.Crear anuncio, aceptarlo y modificarlo desde el cliente. OK. Se quedan huerfanas las fotos y el proceso de purgado se encarga de ellas.
+-Consultan una pregunta, modifico el anuncio y lo pilla el proceso de control de palabrotas (¿enviara mail?)

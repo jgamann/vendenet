@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.vendenet.negocio.entidad.HistoricoBajas" table="historicobajas">
+		<id name="id" column="HISTORICO_BAJAS_ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="HISTORICO_BAJAS_NAME"/>		
+		<property name="emailCliente" column="EMAIL_CLIENTE"/>
+		<property name="tituloAnuncio" column="TITULO_ANUNCIO"/>
+		<property name="fechaBorrado" column="FECHA_BORRADO"/>
+		<property name="cuerpoAnuncio" column="CUERPO_ANUNCIO"/>
+		<property name="precio" column="PRECIO"/>
+		<many-to-one name="categoria" column="CATEGORIA_ID" class="com.vendenet.negocio.entidad.CategoriaAnuncio" lazy="false"/>
+		<many-to-one name="tipoAnuncio" column="TIPOANUNCIO_ID" class="com.vendenet.negocio.entidad.TipoAnuncio" lazy="false"/>
+		<many-to-one name="provincia" column="PROVINCIA_ID" class="com.vendenet.negocio.entidad.Provincia" lazy="false"/>
+	</class>
+</hibernate-mapping>

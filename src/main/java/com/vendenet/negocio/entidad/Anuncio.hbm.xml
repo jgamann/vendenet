@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.vendenet.negocio.entidad.Anuncio" table="anuncio">
+		<id name="id" column="ANUNCIO_ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="ANUNCIO_NAME"/>		
+		<many-to-one name="cliente" column="CLIENTE_ID" class="com.vendenet.negocio.entidad.Cliente" lazy="false"/>
+		<property name="fechaAlta" column="FECHA_ALTA"/>
+		<many-to-one name="tipoVendedor" column="TIPOVENDEDOR_ID" class="com.vendenet.negocio.entidad.TipoVendedor" lazy="false"/>
+		<property name="cuerpo" column="CUERPO"/>
+		<property name="precio" type="double" column="PRECIO"/>
+		<many-to-one name="categoria" column="CATEGORIA_ID" class="com.vendenet.negocio.entidad.CategoriaAnuncio" lazy="false"/>
+		<many-to-one name="tipoAnuncio" column="TIPOANUNCIO_ID" class="com.vendenet.negocio.entidad.TipoAnuncio" lazy="false"/>
+		<property name="destacado" type="boolean" column="DESTACADO"/>
+		<property name="fechaCaducidad" column="FECHA_CADUCIDAD"/>
+		<property name="fechaBorrado" column="FECHA_BORRADO"/>
+		<bag name="adjuntos" table="ADJUNTO" lazy="false" order-by="PRINCIPAL DESC">
+    		<key column="ANUNCIO_ID"/>
+    		<one-to-many class="com.vendenet.negocio.entidad.Adjunto"/>
+ 		</bag>
+ 		<many-to-one name="provincia" column="PROVINCIA_ID" class="com.vendenet.negocio.entidad.Provincia" lazy="false"/>
+ 		<bag name="visitas" table="IPVISTANTE" lazy="false">
+    		<key column="ANUNCIO_ID"/>
+    		<one-to-many class="com.vendenet.negocio.entidad.IpVisitante"/>
+ 		</bag>
+ 		<property name="publicado" type="boolean" column="PUBLICADO"/>
+ 		<property name="revisado" type="boolean" column="REVISADO"/>
+	</class>
+</hibernate-mapping>

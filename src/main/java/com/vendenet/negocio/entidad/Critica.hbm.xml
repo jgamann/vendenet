@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.vendenet.negocio.entidad.Critica" table="critica">
+		<id name="id" column="CRITICA_ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="CRITICA_NAME"/>
+		<property name="emailCliente" column="EMAIL_CLIENTE"/>
+		<property name="emailCriticon" column="EMAIL_CRITICON"/>
+		<property name="nombreCriticon" column="NOMBRE_CRITICON"/>
+		<property name="texto" column="TEXTO_CRITICA"/>
+		<property name="fechaAlta" column="FECHA_ALTA"/>
+		<property name="valoracion" type="double" column="VALORACION"/>
+		<property name="confirmada" type="boolean" column="CONFIRMADA"/>
+		<property name="codigo" column="CODIGO"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,199 @@
+.body_confondo{
+	background-image: url(../imagenes/FondoGris.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color: #cacccf;
+}
+#contenedor {
+	width: 1003px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+	padding: 0em;
+}
+.line {
+	float:left;
+	width: 100%;
+	height:1px;
+	margin:0.5em 0em;
+	background:#d7d2d2;
+}
+.login{
+	width: 634px;
+	vertical-align: middle; 
+	font-size: 1.5em;
+	margin: 0px;
+	padding: 0px;
+}
+.caja_login{
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #ffffff;
+	font-weight: bolder;
+	text-align: left;
+	margin: 25%;
+	margin-top: 10%;
+	font-style: italic;
+	min-width: 300px;
+	min-height: 60px;
+	padding: 5%;
+	background:#222;
+	
+	position:relative; 
+	-o-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	-icab-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	-khtml-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+	
+	-o-border-radius: 10px;
+	-icab-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+.login_ex{
+	font-size: 1.5em;
+}
+.lista_anuncios{
+	padding-top: 5em;
+	text-decoration: none;
+	text-align: center;
+	width: 100%; 
+}
+.lista_anuncios ul{
+	list-style-type:none;
+	width: 100%;
+	display: inline;
+	float: left;
+	padding: 0px;
+	cursor: pointer;
+}
+.lista_anuncios ul li:hover{
+	border:#ffffff solid 1px;
+}
+.lista_anuncios a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.lista_anuncios a:hover{
+	text-decoration: none;
+	color: red;
+}
+.anuncio_revision_par{
+	background:#555;
+	border:#555 solid 1px;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	position:relative; 
+	padding: 10px;
+	min-height: 1.5em;
+	
+}
+.anuncio_revision_impar{
+	background:#222;
+	border:#222 solid 1px;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	position:relative; 
+	padding: 10px;
+	min-height: 1.5em;
+	
+}
+.anuncio_revision_seleccionado{
+	background: #654987;
+}
+.tercio_float{
+	width: 33%;
+	margin-top: 3em;
+	margin-left: 0em;
+	margin-bottom: 0em;
+	margin-right: 0em;
+	list-style-type: none;
+	text-align: center;
+	padding: 0em;
+	float: left;
+	border: 0px;
+}
+.cuarto_float{
+	width: 25%;
+	margin-top: 3em;
+	margin-left: 0em;
+	margin-bottom: 0em;
+	margin-right: 0em;
+	list-style-type: none;
+	text-align: center;
+	padding: 0em;
+	float: left;
+	border: 0px;
+}
+.cuarto_float a{
+	text-decoration: none;
+	border: 0px;
+}
+
+.cuarto_float img{
+	text-decoration: none;
+	border: 0px;
+}
+.sexto_float{
+	width: 16%;
+	margin-top: 3em;
+	margin-left: 0em;
+	margin-bottom: 0em;
+	margin-right: 0em;
+	list-style-type: none;
+	text-align: center;
+	padding: 0em;
+	float: left;
+	border: 0px;
+}
+.label_negra{
+	font-family: Arial, Helvetica, sans-serif;	
+}
+.izquierda{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	float: left;
+	width: 25%
+}
+.derecha{
+	float: left;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: red;
+	font-size: 0.8em;
+	
+}
+.derecha a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+}
+.derecha a:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: red;
+}
+.ochenta{
+	float: left;
+	width: 80%;	
+	min-height: 1.5em;
+}
+.veinte{
+	float: right;
+	width: 10%;	
+	min-height: 1.5em;
+}
+.detalle_navegador{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: red;
+}

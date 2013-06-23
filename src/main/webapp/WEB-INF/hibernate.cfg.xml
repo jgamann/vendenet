@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="connection.useUnicode">true</property>
+        <property name="connection.characterEncoding">UTF-8</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1/vendenet</property>
+        <property name="connection.username">root</property>
+        <!--       
+        <property name="connection.password">sig1991</property>
+ 		-->
+        <!-- -->
+        <property name="connection.password">Txusb0r!</property>
+ 		 
+<!-- database pooling information -->
+		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+		<property name="c3p0.min_size">5</property>
+		<property name="c3p0.max_size">100</property>
+		<property name="c3p0.timeout">1000</property>
+		<property name="hibernate.c3p0.acquire_increment">1</property> 
+		<property name="hibernate.c3p0.idle_test_period">100</property>  
+		<property name="hibernate.c3p0.max_size">100</property> 
+		<property name="hibernate.c3p0.max_statements">0</property> 
+		<property name="hibernate.c3p0.min_size">5</property> 
+		<property name="hibernate.c3p0.timeout">18000</property>
+		<property name="hibernate.c3p0.maxIdleTime">18000</property>
+		<property name="hibernate.c3p0.testConnectionOnCheckin">true</property>		
+		<property name="hibernate.c3p0.idleConnectionTestPeriod">100</property>
+		<property name="hibernate.c3p0.preferredTestQuery">SELECT 1</property>
+		<property name="hibernate.c3p0.testConnectionOnCheckout">false</property>
+		<property name="c3p0.debugUnreturnedConnectionStackTraces">true</property>
+        <!-- JDBC connection pool (use the built-in) -->
+        <!-- property name="connection.pool_size">1</property> -->
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">false</property>
+        <mapping resource="com/vendenet/negocio/entidad/Adjunto.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/Anuncio.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/Busqueda.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/CategoriaAdjunto.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/CategoriaAnuncio.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/CiudadTemp.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/Cliente.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/CriterioOrden.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/Critica.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/EnvioPendiente.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/EnvioRealizado.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/HistoricoBajas.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/IpVisitante.hbm.xml" />
+		<mapping resource="com/vendenet/negocio/entidad/Palabrota.hbm.xml" />
+        <mapping resource="com/vendenet/negocio/entidad/Provincia.hbm.xml" />
+        <mapping resource="com/vendenet/negocio/entidad/TipoAnuncio.hbm.xml" />
+        <mapping resource="com/vendenet/negocio/entidad/TipoVendedor.hbm.xml" />
+        <mapping resource="com/vendenet/negocio/entidad/UltimoBackupFoto.hbm.xml" />
+        <mapping resource="com/vendenet/negocio/entidad/Usuario.hbm.xml" />
+        <mapping resource="com/vendenet/negocio/entidad/VisitaIntranet.hbm.xml" />
+        <mapping resource="com/vendenet/negocio/entidad/VisitaWeb.hbm.xml" />
+        <mapping resource="com/vendenet/negocio/entidad/WebAmiga.hbm.xml" />
+    </session-factory>
+
+</hibernate-configuration>
